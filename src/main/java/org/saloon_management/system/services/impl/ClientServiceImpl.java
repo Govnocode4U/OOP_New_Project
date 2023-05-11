@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional(readOnly = true)
@@ -17,6 +18,17 @@ public class ClientServiceImpl implements ClientService {
     @Override
     public List<Client> getAll() {
         return clientRepository.findAll();
+    }
+
+    @Override
+    public Optional<Client> getOneById(Integer id) {
+        return clientRepository.findById(id);
+    }
+
+    @Transactional
+    @Override
+    public void delete(Integer id ) {
+        clientRepository.deleteById(id);
     }
 
     @Override

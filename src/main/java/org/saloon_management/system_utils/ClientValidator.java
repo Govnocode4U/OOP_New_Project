@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 @Component
 public class ClientValidator implements Validator {
@@ -17,10 +18,14 @@ public class ClientValidator implements Validator {
     }
 
     @Override
-    public void validate(Object target, Errors errors) {
+    public void validate(@ModelAttribute Object target, Errors errors) {
         Client client = (Client) target;
         if (clientService.getOne(client.getFullName()) != null) {
-            errors.rejectValue("name", "", "This name is already in use");
+            errors.rejectValue("full_Name", "", "This name is already in use");
+            System.out.println("This name is already in use");
+        }
+        else {
+            System.out.println("validError");
         }
 
     }
