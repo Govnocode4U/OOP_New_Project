@@ -1,4 +1,4 @@
-package org.saloon_management.system_utils;
+package org.saloon_management.system_utils.validators;
 
 import org.saloon_management.system.services.ClientService;
 import org.saloon_management.system_models.Client;

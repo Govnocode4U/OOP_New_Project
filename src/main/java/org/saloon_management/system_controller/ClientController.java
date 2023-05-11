@@ -3,7 +3,7 @@ package org.saloon_management.system_controller;
 import org.modelmapper.ModelMapper;
 import org.saloon_management.system.services.ClientService;
 import org.saloon_management.system_models.Client;
-import org.saloon_management.system_utils.ClientValidator;
+import org.saloon_management.system_utils.validators.ClientValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
