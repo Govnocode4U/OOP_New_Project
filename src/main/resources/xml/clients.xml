@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clients>
+    <client>
+        <fullName>client1</fullName>
+        <phone>89822029311</phone>
+        <email>askjdh</email>
+    </client>
+    <client>
+        <fullName>client2</fullName>
+        <phone>89822029311</phone>
+        <email>asdasd</email>
+    </client>
+    <client>
+        <fullName>фывфывыф</fullName>
+        <phone>+7 982-202-93-11</phone>
+        <email>фывыфвыф</email>
+    </client>
+    <client>
+        <fullName>новый клиент1</fullName>
+        <phone>+7 982-202-93-11</phone>
+        <email>фвыфва</email>
+    </client>
+</clients>
