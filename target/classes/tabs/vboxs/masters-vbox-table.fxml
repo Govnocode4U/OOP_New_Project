@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.paint.Color?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19"
+      fx:controller="org.saloon_management.ui.controllers.tables_controllers.MastersVboxController"
+      style="-fx-background-color:  #444444;">
+
+    <ButtonBar prefHeight="40.0" prefWidth="1000.0" style="-fx-background-color: #555555;" styleClass="buttons-bar" stylesheets="/tabs/vboxs/buttons-bar.css">
+
+    <buttons>
+            <HBox prefWidth="1000.0" prefHeight="100" style="-fx-alignment: center;">
+
+                <Button fx:id="addMaster" mnemonicParsing="false" text="Add master"
+                        onAction="#onAddMasterButtonCLicked">
+                    <HBox.margin>
+                        <Insets right="10.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="deleteMaster" mnemonicParsing="false" text="Delete master"
+                        onAction="#onDeleteMasterButtonCLicked">
+                    <HBox.margin>
+                        <Insets right="10.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="getFromXml" mnemonicParsing="false" text="Export to XML"
+                        onAction="#onGetFromXmlButtonCLicked">
+                    <HBox.margin>
+                        <Insets right="10.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="showMastersServices" mnemonicParsing="false" text="Show services"
+                        onAction="#onShowServicesButtonClicked">
+                    <HBox.margin>
+                        <Insets right="10.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="editMaster" mnemonicParsing="false" onAction="#onEditMasterButtonClicked"
+                        prefWidth="94.0" text="Edit">
+                    <HBox.margin>
+                        <Insets right="10.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="generatePdf" mnemonicParsing="false" onAction="#onGeneratePdfButtonClicked"
+                        prefWidth="94.0" text="Generate PDF"/>
+
+            </HBox>
+        </buttons>
+    </ButtonBar>
+
+    <TableView fx:id="mastersTable">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="Id"/>
+            <TableColumn fx:id="fullNameColumn" prefWidth="75.0" text="Full name"/>
+            <TableColumn fx:id="specializationColumn" prefWidth="75.0" text="Specialization"/>
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+        <effect>
+            <DropShadow height="35.74" radius="21.7925" width="53.43">
+                <color>
+                    <Color opacity="0.46271511912345886" />
+                </color>
+            </DropShadow>
+        </effect>
+        <VBox.margin>
+            <Insets right="21.0" />
+        </VBox.margin>
+    </TableView>
+</VBox>

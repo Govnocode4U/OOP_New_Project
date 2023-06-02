@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<services>
+    <client>
+        <Name>service1</Name>
+        <Price>2112</Price>
+    </client>
+    <client>
+        <Name>as</Name>
+        <Price>123</Price>
+    </client>
+    <client>
+        <Name>service3</Name>
+        <Price>10000</Price>
+    </client>
+</services>

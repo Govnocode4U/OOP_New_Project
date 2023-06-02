@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+<Button xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="org.saloon_management.ui.controllers.button_controllers.HomeButtonController"
+        alignment="BASELINE_LEFT"
+        graphicTextGap="10.0"
+        mnemonicParsing="false"
+        onAction="#onHomeButtonClicked"
+        prefHeight="60.0"
+        prefWidth="200.0"
+        styleClass="button"
+        stylesheets="/tabs/buttons/buttons.css"
+        text="Home"
+        textAlignment="CENTER"
+        textFill="WHITE">
+    <font>
+        <Font name="AppleGothic Regular" size="18.0"/>
+    </font>
+</Button>

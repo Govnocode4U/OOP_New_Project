@@ -1,0 +1,17 @@
+.buttons-bar .button {
+    -fx-color: #ffffff !important;
+    -fx-background-color: #555555;
+    -fx-text-fill: white;
+}
+.buttons-bar .button:hover {
+    -fx-background-color: #0088FF;
+    -fx-text-fill: white;
+}
+.buttons-bar .button:pressed {
+    -fx-background-color: #FFAA00;
+}
+.buttons-bar {
+    -fx-alignment: center;
+
+}
+

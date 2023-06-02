@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0"
+            prefWidth="522.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.saloon_management.ui.controllers.dialog_windows_controllers.AppointmentDialogWindowController">
+    <VBox layoutX="19.0" layoutY="29.0" prefHeight="270.0" prefWidth="127.0">
+        <Label prefHeight="39.0" prefWidth="113.0" text="Client:">
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+            <font>
+                <Font name="Apple SD Gothic Neo Regular" size="16.0"/>
+            </font>
+        </Label>
+        <Label prefHeight="39.0" prefWidth="113.0" text="Master:" textAlignment="CENTER">
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+            <font>
+                <Font name="Apple SD Gothic Neo Regular" size="16.0"/>
+            </font>
+        </Label>
+        <Label prefHeight="39.0" prefWidth="113.0" text="Service:" textAlignment="CENTER">
+            <font>
+                <Font name="Apple SD Gothic Neo Regular" size="16.0"/>
+            </font>
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+        </Label>
+        <Label prefHeight="39.0" prefWidth="113.0" text="Date:">
+            <font>
+                <Font name="Apple SD Gothic Neo Regular" size="16.0"/>
+            </font>
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+        </Label>
+        <Label prefHeight="39.0" prefWidth="113.0" text="Time:">
+            <font>
+                <Font name="Apple SD Gothic Neo Regular" size="16.0"/>
+            </font>
+        </Label>
+    </VBox>
+    <VBox layoutX="223.0" layoutY="33.0" prefHeight="270.0" prefWidth="258.0">
+        <ChoiceBox fx:id="clientField" prefHeight="39.0" prefWidth="258.0">
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+        </ChoiceBox>
+        <ChoiceBox fx:id="masterField" prefHeight="39.0" prefWidth="258.0">
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+        </ChoiceBox>
+        <ChoiceBox fx:id="serviceField" prefHeight="39.0" prefWidth="258.0">
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+        </ChoiceBox>
+        <DatePicker fx:id="datePicker" prefHeight="39.0" prefWidth="258.0">
+            <VBox.margin>
+                <Insets bottom="20.0"/>
+            </VBox.margin>
+        </DatePicker>
+        <TextField fx:id="timeField" prefHeight="39.0" prefWidth="258.0"/>
+    </VBox>
+    <HBox layoutX="178.0" layoutY="342.0" prefHeight="31.0" prefWidth="167.0">
+        <Button fx:id="saveButton" mnemonicParsing="false" onAction="#onSaveButtonClicked" prefHeight="31.0"
+                prefWidth="68.0" text="Save">
+            <HBox.margin>
+                <Insets right="30.0"/>
+            </HBox.margin>
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Button>
+        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#onCancelButtonClicked" text="Cancel">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Button>
+    </HBox>
+</AnchorPane>

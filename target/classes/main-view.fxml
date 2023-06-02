@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.saloon_management.ui.controllers.MainWindowController">
+    <children>
+        <BorderPane prefHeight="601.0" prefWidth="1000.0">
+            <left>
+                <VBox prefHeight="554.0" prefWidth="200.0" style="-fx-background-color: #444444;" BorderPane.alignment="CENTER">
+                    <children>
+                        <fx:include source="/tabs/buttons/home-button.fxml" />
+                        <fx:include source="/tabs/buttons/clients-button.fxml" />
+                        <fx:include source="/tabs/buttons/masters-button.fxml" />
+                        <fx:include source="/tabs/buttons/services-button.fxml" />
+                        <fx:include source="/tabs/buttons/appointment-button.fxml" />
+                    </children>
+                </VBox>
+            </left>
+            <top>
+                <HBox prefHeight="82.0" prefWidth="1000.0" style="-fx-background-color: #444444;" BorderPane.alignment="CENTER" />
+            </top>
+            <center>
+
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

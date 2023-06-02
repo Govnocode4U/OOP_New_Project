@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<appointments>
+    <appointment>
+        <Client>client2</Client>
+        <Master>master1</Master>
+        <Service>service1</Service>
+    </appointment>
+</appointments>
